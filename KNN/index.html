@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+	<script src="func_ocr.js"></script>
+<!-- 	<link rel="stylesheet" type="text/css" href="ocr.css"> -->
+</head>
+<body onload="func_ocr.onLoadFunction()">
+	<div id="main-container" style="text-align: center;">
+		<h1>KNN在线手写数字识别系统</h1>
+		<form name="input">
+			<p>数字: <input id="digit" type="text"> </p>
+			<input type="button" value="训练" onclick="func_ocr.train()">
+			<input type="button" value="测试" onclick="func_ocr.test()">
+			<input type="button" value="重置" onclick="func_ocr.resetCanvas();"/>
+		</form> 
+		</br>
+		<canvas id="canvas" width="320" height="320"></canvas>
+	</div>
+</body>
+</html>
